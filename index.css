@@ -80,7 +80,7 @@ div.section1 {
 p.pg1 {
 	margin: auto;
 	width: 50%;
-	padding: 20px 20px 20px 0;
+	padding: 20px;
 	font-size: 25px;
 	line-height: 35px;
 }
@@ -208,13 +208,12 @@ div.talent-btn button:hover {
 button#btn-hire {
 	color: white;
 	background: #d90000;
-	width: 15%;
+	
 }
 
 button#btn-join {
 	color: white;
 	background: #545353;
-	width: 20%;
 }
 
 .section-tal p{
@@ -270,7 +269,7 @@ div.count {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 35px;
 }
 
 
@@ -374,13 +373,20 @@ div.footer-talent-imgs {
 }
 
 div.footer-talent-imgs .second-tal-div img {
-	width: 26px;
+	width: 20px;
 	margin: 0 5px;
 }
 
 
 button:active {
 	transform: translateY(5px);
+}
+
+div.copy-copy {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0;
+	font-size: 14px;
 }
 
 
@@ -481,7 +487,7 @@ div.first-part p.par small {
 	color: #514949;
 }
 div.first-part span {
-	font-size: 30px;
+	font-size: 25px;
 	margin-top: -10px;
 }
 
@@ -532,7 +538,7 @@ div.hr {
 	margin: 0 50px;
 }
 div.hr img {
-	width: 25%;
+	width: auto;
 }
 div h2.par-1 {
 	text-align: left;
@@ -612,20 +618,20 @@ div.grid {
 }
 
 div.grid p {
-	font-size: 17px;
+	font-size: 16px;
 	line-height: 24px;
 	padding: 10px 0 50px 0;
-	width: 85%;
+	width: 80%;
 }
 div.grid h2 {
-	width: 40%;
+	width: 50%;
 }
 div.grid div {
-	margin: 0;
-	width: 90%;
+	margin: 0 0 10px 0;
+	width: 85%;
 	padding: 0 0 0 30px;
 	border-radius: 10px;
-	box-shadow: 14px 17px 2px 8px #fff8e5;
+	box-shadow: 13px 17px 16px 0px #fff8e5;
 }
 
 div.grid div:hover {
@@ -634,7 +640,7 @@ div.grid div:hover {
 div.grid img {
 	width: 70px;
 	float: right;
-	margin-top: -100px;
+	margin-top: -92px;
 }
 
 
@@ -694,7 +700,7 @@ div.training div.buttons button {
 	color: white;
 	font-size: 14px;
 	border: 2px solid white;
-	width: 40%;
+	width: 50%;
 	display: flex;
 	align-items: center;
 	margin: 0 20px 15px 0;
@@ -713,21 +719,28 @@ div.training div.buttons img {
 div.training div.buttons button p {
 	padding: 5px 0 5px 5px;
 }
- div.svg-6 {
+
+div.section-img h2 {
+	font-size: 2em;
+}
+
+div.svg-6 {
  	text-align: center;
  	margin: 0;
- }
+}
+
 div.svg-6 img {
  	width: 60px;
- }
+}
 
 div.section7 {
  	margin: 50px;
- }
+}
 
 div.section7 span {
 	margin: 0;
 }
+
 div.section7 h2 {
 	margin: -15px 0 ;
 	width: 40%;
@@ -895,10 +908,12 @@ div.program-structure {
 div.structure {
 	text-align: center;
 }
+
 div.structure-imgs {
 	display: flex;
 	justify-content: space-between;
 }
+
 div.structure-imgs .img1, .img2 {
 	width: 60px;
 }
@@ -912,6 +927,11 @@ div.tracks {
 	display: flex;
 	width: 100%;
 	margin: auto;
+}
+
+div.tracks p, div.tracks li {
+	font-size: 14px;
+	line-height: 23px;
 }
 
 div.tracks img {
@@ -976,8 +996,9 @@ div.last-part {
 div.last-part p {
 	font-size: 16px;
 	margin-left: 80px;
+
 	/*
-	FOR A ROUND IMage
+	FOR A ROUND IMage at the side;
 	background: url('round.svg') #e8332c;
 	background-repeat: no-repeat;
     background-size: 100px;
@@ -989,9 +1010,8 @@ div.last-part p {
 
 div.last-part h1 {
 	line-height: 40px;
-	width: 35%;
-	margin: 20px auto;
-
+	margin: 10px auto;
+	width: 43%;
 }
 
 div.last-part button {
@@ -1039,6 +1059,14 @@ div.logos {
 /*for index.html page*/
 
 @media screen and (max-width: 845px) {
+
+	nav p {
+		width: 100%;
+	}
+
+	p.pg1 {
+		width: 100%;
+	}
 
 	div.btn-index {
 		display: grid;
@@ -1095,23 +1123,40 @@ div.logos {
 	}
 
 	.section-tal p {
-		width: 50%;
+		width: 75%;
+		font-size: 16px;
 	}
 
 	.section-tal img {
-		margin-top: -5%;
+		display: none;
+	}
+
+	div.footer-talent-imgs {
+		flex-direction: column;
+	}
+
+	div.copy-copy {
+		flex-direction: column;
 	}
 
 
 
 	/* This is for training.html responsiveness*/
 
+	nav.top>img {
+		width: 50%;
+	}
+
 	div.top-a .top-a-a {
 		display: none;
 	}
 
+	div.top-a a {
+		padding: 5px 0;
+	}
+
 	div.first-part h1, .first-part p {
-		width: 100%;
+		width: 70%;
 	}
 
 	div.hr {
@@ -1138,7 +1183,16 @@ div.logos {
 		margin: 52px auto;
 	}
 	div.grid img {
-		width: 100px;
+		width: 20%;
+		margin-top: -91px;
+	}
+
+	div.training .section-img {
+		width: 100%;
+	}
+
+	div.section-img h2 {
+		font-size: 1.5em;
 	}
 
 	div.training {
@@ -1147,10 +1201,6 @@ div.logos {
 
 	div.training .section-img p {
 		width: 100%;
-	}
-
-	div.training div.buttons button {
-		margin: 0 50px 20px 0;
 	}
 
 	div.section7 h2 {
